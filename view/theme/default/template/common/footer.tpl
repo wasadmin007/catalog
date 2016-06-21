@@ -15,7 +15,7 @@
       <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
       <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
       <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
-      <li><a href="http://jindru.com/www/index.php?route=information/information&information_id=7">CancelOrders</a></li>
+      <li><a href="<?php echo $cancel; ?>"><?php echo $text_cancel; ?></a></li>
       <li><a href="http://jindru.com/www/index.php?route=information/feedback">FeedBack</a></li>
     </ul>
   </div>

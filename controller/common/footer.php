@@ -17,6 +17,7 @@ class ControllerCommonFooter extends Controller {
 		$this->data['text_order'] = $this->language->get('text_order');
 		$this->data['text_wishlist'] = $this->language->get('text_wishlist');
 		$this->data['text_newsletter'] = $this->language->get('text_newsletter');
+		$this->data['text_cancel'] = $this->language->get('text_cancel');
 
 		$this->load->model('catalog/information');
 
@@ -37,12 +38,13 @@ class ControllerCommonFooter extends Controller {
 		$this->data['manufacturer'] = $this->url->link('product/manufacturer');
 		$this->data['voucher'] = $this->url->link('account/voucher', '', 'SSL');
 		$this->data['affiliate'] = $this->url->link('affiliate/account', '', 'SSL');
-		$this->data['special'] = $this->url->link('product/special');
+		$this->data['special'] = $this->url->link('product/special');//
 		$this->data['account'] = $this->url->link('account/account', '', 'SSL');
 		$this->data['order'] = $this->url->link('account/order', '', 'SSL');
 		$this->data['wishlist'] = $this->url->link('account/wishlist', '', 'SSL');
 		$this->data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL');		
-
+		$this->data['cancel'] = $this->url->link('jindru/cancel/insert', '', 'SSL');
+		
 		$this->data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
 
 		// Whos Online
