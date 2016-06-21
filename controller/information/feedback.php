@@ -9,7 +9,7 @@ class ControllerInformationFeedback extends Controller {
 	 
     	if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
 
-			$this->db->query("INSERT INTO " . DB_PREFIX . "feedbacks SET name = '" .$this->db->escape($_POST['name']) . "',feedback = '" .$this->db->escape($_POST['enquiry']) . "', email = '" .$this->db->escape($_POST['email']) . "'");
+			$this->db->query("INSERT INTO " . DB_PREFIX . "feedback SET name = '" .$this->db->escape($_POST['name']) . "',feedback = '" .$this->db->escape($_POST['enquiry']) . "', email = '" .$this->db->escape($_POST['email']) . "'");
 	  		$this->redirect($this->url->link('information/feedback/success'));
     	}
 
