@@ -1431,6 +1431,75 @@ ul.box-filter > li ul {
 .download-list .download-info {
 	text-align: right;
 }
+/*cancels*/
+.cancel-list {
+	margin-bottom: 10px;
+}
+.cancel-list .cancel-id {
+	width: 49%;
+	float: left;
+	margin-bottom: 2px;
+}
+.cancel-list .cancel-status {
+	width: 49%;
+	float: right;
+	text-align: right;
+	margin-bottom: 2px;
+}
+.cancel-list .cancel-content {
+	padding: 10px 0px;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 20px;
+	border-top: 1px solid #EEEEEE;
+	border-bottom: 1px solid #EEEEEE;
+}
+.cancel-list .cancel-content div {
+	float: left;
+	width: 33.3%;
+}
+.cancel-list .cancel-info {
+	text-align: right;
+}
+.cancel-product {
+	overflow: auto;
+	margin-bottom: 20px;
+}
+.cancel-name {
+	float: left;
+	width: 31%;
+	margin-right: 15px;
+}
+.cancel-model {
+	float: left;
+	width: 31%;
+	margin-right: 15px;
+}
+.cancel-quantity {
+	float: left;
+	width: 31%;
+}
+.cancel-detail {
+	overflow: auto;
+	margin-bottom: 20px;
+}
+.cancel-reason {
+	float: left;
+	width: 31%;
+	margin-right: 15px;
+}
+.cancel-opened {
+	float: left;
+	width: 31%;
+	margin-right: 15px;
+}
+.cancel-opened textarea {
+	width: 98%;
+	vertical-align: top;
+}
+.cancel-captcha {
+	float: left;
+}
 /* cart */
 .cart-info table {
 	width: 100%;
